@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            background-color: antiquewhite;
+            grid-template-areas:
+             'header header header'
+             'mini main main'
+             'mini footer footer';
+        }
+        .grid-container>div{
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+        }
+        .grid-item1{grid-area: header;
+          }
+        .grid-item2{grid-area: mini;}
+        .grid-item3{grid-area: main;}
+        .grid-item4{grid-area: footer;}
+        .grid-item1 li{float: left;
+        overflow: hidden;}
+        .grid-item1 ul{overflow: hidden;
+        margin: 3px;
+    padding: 0;}
+    .grid-item1 li a{text-decoration: none;
+    padding: 20px; display: block;
+color: rgb(1, 1, 1);
+}
+.grid-item1 li a:hover{background-color: rgba(9, 159, 173, 0.489);}
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1"><ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">settings</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">help</a></li>
+        </ul></div>
+        <div class="grid-item2"><ul>
+            <li><a href="#">section</a></li>
+            <li><a href="#">award</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">books</a></li>
+        </ul></div>
+        <div class="grid-item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Itaque maxime fuga assumenda. Repellendus neque quidem tenetur dolores necessitatibus
+             tempore, <br>
+            explicabo quas qui at quo sequi maiores nam facere adipisci vero.<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+         Unde odit ex blanditiis ipsa quaerat fugiat ducimus voluptatem molestiae<br>
+          vitae provident deserunt explicabo excepturi laborum quo cupiditate, nesciunt culpa! Nobis, officia!</div>
+        <div class="grid-item4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam quasi deserunt officia neque quia repellat. </div> 
+    </div>
+</body>
+</html>
