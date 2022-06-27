@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   .grid-container{
+    display: grid;
+    background-color: antiquewhite;
+    gap: 10px;
+    grid-template-areas:'header header header'
+    'main mini right '
+    'main footer footer';
+
+
+   }
+   .grid-item1{
+    grid-area: header;
+   }
+   .grid-item2{grid-area: main ;}
+   .grid-item3{grid-area: mini;}
+   .grid-item4{grid-area: right;}
+.grid-item5{grid-area: footer;}
+   
+   .grid-container>div{
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;}
+    
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">header</div>
+        <div class="grid-item2">mini</div>
+        <div class="grid-item3">main section</div>
+        <div class="grid-item4">right section</div>
+        <div class="grid-item5">footer</div>
+       
+        
+    </div>
+</body>
+</html>
